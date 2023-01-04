@@ -28,6 +28,7 @@ def agent_evaluation(evaluation_environment, max_steps, n_evaluation_episodes, p
             action, _ = policy.act(state)
             state, reward, done, _ = evaluation_environment.step(action)
 
+            episode_rewards.append(reward)
             if done:
                 break
         all_episodes_rewards.append(sum(episode_rewards))

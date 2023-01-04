@@ -45,5 +45,5 @@ blank_policy_evaluation = agent_evaluation(evaluation_environment=cartpole_evalu
                                                          action_size=action_space_size,
                                                          hidden_layer_size=cartpole_hyperparameters['h_size']))
 
-print(f"Trained algorithm: Mean: {trained_policy_evaluation[0]}, Std: {trained_policy_evaluation[1]}")
+print(f"\nTrained algorithm: Mean: {trained_policy_evaluation[0]}, Std: {trained_policy_evaluation[1]}")
 print(f"Not trained algorithm: Mean: {blank_policy_evaluation[0]}, Std: {blank_policy_evaluation[1]}")
