@@ -17,3 +17,21 @@ q_learning_hyperparameters = {
     "max_epsilon": 1.0,
     "min_epsilon": 0.05
 }
+
+a2c_stable_baselines_hyperparameters = {
+    "policy": "MlpPolicy",
+    "gae_lambda": 0.9,
+    "gamma": 0.99,
+    "learning_rate": 0.00096,
+    "max_grad_norm": 0.5,
+    "n_steps": 8,
+    "vf_coef": 0.4,
+    "ent_coef": 0.0,
+    "policy_kwargs": {
+        "log_std_init": -2,
+        "ortho_init": False},
+    "normalize_advantage": False,
+    "use_rms_prop": True,
+    "use_sde": True,
+    "verbose": 1
+}
