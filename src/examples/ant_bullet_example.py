@@ -8,11 +8,11 @@ from stable_baselines3.common.env_util import make_vec_env
 from src.algorithms.hyperparameters import a2c_stable_baselines_hyperparameters
 
 # hard-coded arguments
-TENSORBOARD_LOGS_PATH: str = "../../logs/tensorboard"
+TENSORBOARD_LOGS_PATH: str = "logs/tensorboard"
 ENV_ID: str = "AntBulletEnv-v0"
 TRAINING_STEPS: int = 200000
-PATH_TO_SAVE_MODEL: str = "../../data/models/a2c-AntBulletEnv-v0"
-PATH_TO_SAVE_ENVIRONMENT: str = "../../data/environments/vec_normalize-AntBulletEnv-v0.pkl"
+PATH_TO_SAVE_MODEL: str = "data/models/a2c-AntBulletEnv-v0"
+PATH_TO_SAVE_ENVIRONMENT: str = "data/environments/vec_normalize-AntBulletEnv-v0.pkl"
 
 # creating the environment (vector of the environments)
 environment = make_vec_env(ENV_ID, n_envs=4)
