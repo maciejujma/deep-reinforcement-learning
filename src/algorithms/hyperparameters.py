@@ -8,7 +8,7 @@ cartpole_hyperparameters = {
 }
 
 q_learning_hyperparameters = {
-    "n_training_episodes": 10000,
+    "n_training_episodes": 100000,
     "n_evaluation_episodes": 100,
     "max_t": 99,
     "gamma": 0.95,
@@ -34,4 +34,14 @@ a2c_stable_baselines_hyperparameters = {
     "use_rms_prop": True,
     "use_sde": True,
     "verbose": 1
+}
+
+ppo_stable_baselines_hyperparameters = {
+    'batch_size': 128,
+    'clip_range': 0.4,
+    'ent_coef': 0.0,
+    'gae_lambda': 0.9,
+    'gamma': 0.99,
+    'learning_rate': 3e-05,
+    'max_grad_norm': 0.5,
 }
